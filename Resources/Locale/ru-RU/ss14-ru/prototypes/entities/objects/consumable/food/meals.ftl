@@ -1,5 +1,5 @@
 ent-FoodMealBase = { ent-FoodInjectableBase }
-    .desc = A delicious meal, cooked with love.
+    .desc = Вкусное блюдо, приготовленное с любовью.
     .suffix = { "" }
 ent-FoodMealPotatoLoaded = печеный картофель с начинкой
     .desc = Совершенно запеченный.
@@ -72,4 +72,7 @@ ent-FoodMealSashimi = сашими
     .suffix = { "" }
 ent-FoodMealEnchiladas = энчилада
     .desc = Вива Ля Мексика!
+    .suffix = { "" }
+ent-FoodSaladWatermelonFruitBowl = фруктовый арбузный боул
+    .desc = Единственный салат, в котором можно съесть миску.
     .suffix = { "" }
