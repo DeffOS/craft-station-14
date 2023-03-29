@@ -1,14 +1,29 @@
-- files: ["supermatter.png", "robotics.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "Veritius#2351 (257233913951289344) on discord / @Veritius on GitHub"
-  source: "https://github.com/Veritius"
-
 - files: ["warden.png", "pharmacy.png"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Solbusaur#4343 (220208697429852160) on discord"
   source: "https://github.com/space-wizards/space-station-14"
 
-- files: ["ssxiv.png"]
+- files: ["moth.png"]
   license: "CC-BY-NC-SA-3.0"
-  copyright: "Abyssal#4842 on discord / @aby_doodles on Twitter"
-  source: "https://twitter.com/aby_doodles"
+  copyright: "AspEv"
+  source: "https://www.artstation.com/aspev"
+
+- files: ["eleonore-rose-nt2sdx.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Eleonore Rose"
+  source: "https://www.artstation.com/xianetta"
+
+- files: ["singularity.png", "bluespace_artillery.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "spessmen art"
+  source: "https://spessmenart.tumblr.com/"
+
+- files: ["naevi-beestation23.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Naevi"
+  source: "https://www.artstation.com/naevi"
+
+- files: ["ss13-jojo.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Probably Not"
+  source: "https://ss3d.space/art/"

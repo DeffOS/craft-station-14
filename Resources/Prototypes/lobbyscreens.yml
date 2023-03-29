@@ -1,12 +1,4 @@
 ﻿- type: lobbyBackground
-  id: Robotics
-  background: /Textures/LobbyScreens/robotics.png
-
-- type: lobbyBackground
-  id: Supermatter
-  background: /Textures/LobbyScreens/supermatter.png
-
-- type: lobbyBackground
   id: Warden
   background: /Textures/LobbyScreens/warden.png
 
@@ -15,5 +7,25 @@
   background: /Textures/LobbyScreens/pharmacy.png
 
 - type: lobbyBackground
-  id: SSXIV
-  background: /Textures/LobbyScreens/ssxiv.png
+  id: Moth
+  background: /Textures/LobbyScreens/moth.png
+
+- type: lobbyBackground
+  id: Nt2sdx
+  background: /Textures/LobbyScreens/eleonore-rose-nt2sdx.png
+
+- type: lobbyBackground
+  id: Singularity
+  background: /Textures/LobbyScreens/singularity.png
+
+- type: lobbyBackground
+  id: Bluespace_artillery
+  background: /Textures/LobbyScreens/bluespace_artillery.png
+
+- type: lobbyBackground
+  id: Beestation23
+  background: /Textures/LobbyScreens/naevi-beestation23.png
+
+- type: lobbyBackground
+  id: Jojo13
+  background: /Textures/LobbyScreens/ss13-jojo.png
