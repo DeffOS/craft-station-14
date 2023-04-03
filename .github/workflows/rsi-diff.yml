@@ -46,7 +46,6 @@ jobs:
           issue-number: ${{ github.event.number }}
           body: |
             ${{ steps.diff.outputs.summary-details }}
-
       - name: Update comment if it exists
         if: steps.fc.outputs.comment-id != ''
         uses: peter-evans/create-or-update-comment@v1
@@ -55,7 +54,6 @@ jobs:
           edit-mode: replace
           body: |
             ${{ steps.diff.outputs.summary-details }}
-
       - name: Update comment to read that it has been edited
         if: steps.fc.outputs.comment-id != ''
         uses: peter-evans/create-or-update-comment@v1
