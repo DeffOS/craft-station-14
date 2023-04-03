@@ -17,8 +17,11 @@
       "name": "highwatertank"
     },
     {
+      "name": "highfueltank"
+    },
+    {
       "name": "watercooler",
-	  "delays": [
+      "delays": [
         [
           1,
           1
