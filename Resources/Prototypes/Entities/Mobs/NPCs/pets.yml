@@ -410,7 +410,6 @@
   - type: Grammar
     attributes:
       gender: male
-
   - type: Tag
     tags:
     - CannotSuicide
