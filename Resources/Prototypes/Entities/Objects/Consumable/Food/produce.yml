@@ -503,30 +503,6 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: tomato
-  id: PuddleTomato
-  parent: PuddleBase
-  description: Splat.
-  components:
-  - type: Sprite
-    sprite: Fluids/tomato_splat.rsi
-    state: puddle-0
-    netsync: false
-  - type: Puddle
-    wetFloorEffectThreshold: 0 # No wet floor sparkles
-  - type: SolutionContainerManager
-    solutions:
-      puddle:
-        maxVol: 1000
-        reagents:
-        - ReagentId: JuiceTomato
-          Quantity: 10
-  - type: Evaporation
-    lowerLimit: 0 # todo: reimplement stain behaviour, ideally in a way that doesn't use evaporation lowerLimit
-  - type: Appearance
-  - type: PuddleVisualizer
-
-- type: entity
   name: eggplant
   parent: FoodProduceBase
   id: FoodEggplant
