@@ -79,7 +79,7 @@ binds:
 # Misc
 - function: ShowEscapeMenu
   type: State
-  key: F10
+  key: Escape
 - function: CycleChatChannelForward
   type: State
   key: Tab
