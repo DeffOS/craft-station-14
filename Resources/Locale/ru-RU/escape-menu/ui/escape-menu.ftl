@@ -1,10 +1,10 @@
 ### EscapeMenu.xaml
 
-ui-escape-title = Меню
+ui-escape-title = Игровое меню
 ui-escape-options = Настройки
 ui-escape-rules = Правила
 ui-escape-guidebook = Руководство
-ui-escape-wiki = Wiki (от Corvax)
+ui-escape-wiki = Wiki (От Corvax)
 ui-escape-discord = Discord
 ui-escape-disconnect = Отключиться
 ui-escape-quit = Выйти

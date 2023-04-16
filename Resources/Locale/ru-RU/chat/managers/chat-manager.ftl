@@ -31,5 +31,3 @@ chat-manager-send-admin-announcement-wrap-message = { $adminChannelName }: { $me
 chat-manager-send-hook-ooc-wrap-message = OOC: (D){ $senderName }: { $message }
 chat-manager-dead-channel-name = МЁРТВЫЕ
 chat-manager-admin-channel-name = АДМИН
-
-chat-manager-flood-message = Не горячись, подожди { $delay } сек.
