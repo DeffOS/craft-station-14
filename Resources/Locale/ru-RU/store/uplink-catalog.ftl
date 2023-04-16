@@ -64,6 +64,8 @@ uplink-hypopen-name = гипоручка
 uplink-hypopen-desc = Химический гипоспрей, замаскированный под ручку, способный мгновенно впрыснуть до 10 ед. реагентов. Изначально пуст.
 uplink-voice-mask-name = голосовая маска
 uplink-voice-mask-desc = Противогаз, позволяющий подстраивать свой голос под кого угодно.
+uplink-radio-jammer-name = радиоглушилка
+uplink-radio-jammer-desc = Это устройство при активации нарушает любую исходящую радиосвязь поблизости.
 # Implants
 uplink-storage-implanter-name = имплантер Хранилище
 uplink-storage-implanter-desc = Прячьте предметы внутри себя благодаря новой блюспейс-технологии!

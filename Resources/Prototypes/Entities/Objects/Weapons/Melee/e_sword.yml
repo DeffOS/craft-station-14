@@ -125,9 +125,9 @@
 - type: entity
   parent: BaseItem
   id: EnergyDaggerBox
-  name: e-dagger box
-  suffix: E-Dagger
-  description: A small box containing an e-dagger. Packaging disintegrates when opened, leaving no evidence behind.
+  name: коробка с энергокинжалом
+  suffix: энергокинжал
+  description: Небольшая коробка, содержащая электронный кинжал. Упаковка распадается при вскрытии, не оставляя никаких улик.
   components:
   - type: Sprite
     sprite: Objects/Storage/penbox.rsi
