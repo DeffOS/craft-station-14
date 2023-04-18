@@ -186,10 +186,10 @@
       Steel: 25
 
 - type: entity
-  name: Cybersun pen
+  name: Ручка Cybersun
   parent: BaseItem
   id: CyberPen
-  description: A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write.
+  description: Высокотехнологичная ручка прямо из юридического отдела Cybersun, способная преломлять жесткий свет под невозможными углами через свой алмазный наконечник, чтобы писать.
   components:
   - type: Tag
     tags:
@@ -215,20 +215,20 @@
     size: 2
 
 - type: entity
-  name: captain's fountain pen
+  name: капитанская авторучка
   parent: Pen
   id: PenCap
-  description: 'A luxurious fountain pen for the captain of the station.'
+  description: 'Роскошная перьевая ручка для капитана станции.'
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: pen_cap
 
 - type: entity
-  name: Centcom pen
+  name: Ручка Центком
   parent: CyberPen
   id: PenCentcom
-  description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
+  description: В попытке не отстать от "могущества" киберсанской бюрократии, NT сделала реплику киберручки в своем корпоративном стиле.
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
