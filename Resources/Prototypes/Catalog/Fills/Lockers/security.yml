@@ -100,9 +100,10 @@
       - id: ClothingMaskGas
 
 - type: entity
-  id: ShotgunSafeDisabler
+  id: GunSafeDisabler
   suffix: Disabler
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с дизейблерами
   components:
   - type: StorageFill
     contents:
@@ -110,9 +111,10 @@
         amount: 5
 
 - type: entity
-  id: ShotgunSafePistolMK58
+  id: GunSafePistolMk58
   suffix: MK58
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с Mk58
   components:
   - type: StorageFill
     contents:
@@ -122,9 +124,10 @@
         amount: 8
 
 - type: entity
-  id: ShotgunSafeRifleLecter
+  id: GunSafeRifleLecter
   suffix: Lecter
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с Лектерами
   components:
   - type: StorageFill
     contents:
@@ -134,9 +137,10 @@
         amount: 4
 
 - type: entity
-  id: ShotgunSafeSubMachineGunVector
+  id: GunSafeSubMachineGunVector
   suffix: Vector
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с Векторами
   components:
   - type: StorageFill
     contents:
@@ -146,9 +150,10 @@
         amount: 4
 
 - type: entity
-  id: ShotgunSafeShotgunEnforcer
+  id: GunSafeShotgunEnforcer
   suffix: Enforcer
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с Силовиками
   components:
   - type: StorageFill
     contents:
@@ -158,9 +163,10 @@
         amount: 4
 
 - type: entity
-  id: ShotgunSafeShotgunKammerer
+  id: GunSafeShotgunKammerer
   suffix: Kammerer
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф c Камерерами
   components:
   - type: StorageFill
     contents:
@@ -170,9 +176,10 @@
         amount: 4
 
 - type: entity
-  id: ShotgunSafeSubMachineGunWt550
+  id: GunSafeSubMachineGunWt550
   suffix: Wt550
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф c Wt550
   components:
   - type: StorageFill
     contents:
@@ -182,9 +189,10 @@
         amount: 4
 
 - type: entity
-  id: ShotgunSafeLaserCarbine
+  id: GunSafeLaserCarbine
   suffix: Laser Carbine
-  parent: ShotgunSafe
+  parent: GunSafe
+  name: Оружейный сейф с лазерными карабинами
   components:
   - type: StorageFill
     contents:
