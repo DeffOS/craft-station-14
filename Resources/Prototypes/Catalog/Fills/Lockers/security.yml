@@ -103,7 +103,7 @@
   id: GunSafeDisabler
   suffix: Disabler
   parent: GunSafe
-  name: gun safe disabler
+  name: Оружейный сейф с дизейблерами
   components:
   - type: StorageFill
     contents:
@@ -114,7 +114,7 @@
   id: GunSafePistolMk58
   suffix: MK58
   parent: GunSafe
-  name: gun safe Mk58
+  name: Оружейный сейф с Mk58
   components:
   - type: StorageFill
     contents:
@@ -127,7 +127,7 @@
   id: GunSafeRifleLecter
   suffix: Lecter
   parent: GunSafe
-  name: gun safe lecter
+  name: Оружейный сейф с Лектерами
   components:
   - type: StorageFill
     contents:
@@ -140,7 +140,7 @@
   id: GunSafeSubMachineGunVector
   suffix: Vector
   parent: GunSafe
-  name: gun safe vector
+  name: Оружейный сейф с Векторами
   components:
   - type: StorageFill
     contents:
@@ -153,7 +153,7 @@
   id: GunSafeShotgunEnforcer
   suffix: Enforcer
   parent: GunSafe
-  name: gun safe enforcer
+  name: Оружейный сейф с Силовиками
   components:
   - type: StorageFill
     contents:
@@ -166,7 +166,7 @@
   id: GunSafeShotgunKammerer
   suffix: Kammerer
   parent: GunSafe
-  name: gun safe kammerer
+  name: Оружейный сейф c Камерерами
   components:
   - type: StorageFill
     contents:
@@ -179,7 +179,7 @@
   id: GunSafeSubMachineGunWt550
   suffix: Wt550
   parent: GunSafe
-  name: gun safe Wt550
+  name: Оружейный сейф c Wt550
   components:
   - type: StorageFill
     contents:
@@ -192,7 +192,7 @@
   id: GunSafeLaserCarbine
   suffix: Laser Carbine
   parent: GunSafe
-  name: gun safe laser carbine
+  name: Оружейный сейф с лазерными карабинами
   components:
   - type: StorageFill
     contents:

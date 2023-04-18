@@ -324,7 +324,7 @@
 - type: entity
   id: GunSafe
   parent: LockerBaseSecure
-  name: gun safe
+  name: Оружейный сейф
   components:
   - type: Appearance
     visuals:
