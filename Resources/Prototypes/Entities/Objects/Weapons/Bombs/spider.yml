@@ -1,6 +1,6 @@
 - type: entity
-  name: spider charge
-  description: A modified C-4 charge supplied to you by the Spider Clan. Its explosive power has been juiced up, but only works in one specific area.
+  name: паучий заряд
+  description: Модифицированный заряд C-4, предоставленный вам кланом Пауков. Его взрывная сила была увеличена, но он действует только в одной конкретной области.
   # not actually modified C-4! oh the horror!
   parent: BaseItem
   id: SpiderCharge
