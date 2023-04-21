@@ -92,8 +92,8 @@
 - type: entity
   parent: BaseComputerCircuitboard
   id: SalvageExpeditionsComputerCircuitboard
-  name: salvage expeditions computer board
-  description: A computer printed circuit board for a salvage expeditions computer.
+  name: плата компьютера для экспедиций
+  description: Печатная плата компьютера для экспедиций
   components:
     - type: Sprite
       state: cpu_supply

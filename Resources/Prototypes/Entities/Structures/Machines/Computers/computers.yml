@@ -720,8 +720,8 @@
 - type: entity
   id: ComputerSalvageExpedition
   parent: BaseComputer
-  name: salvage expeditions computer
-  description: Used take salvage missions.
+  name: компьютер экспедиций
+  description: Используется для выполнения экспедиций/
   components:
     - type: Sprite
       layers:
