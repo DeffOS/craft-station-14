@@ -56,8 +56,8 @@
 - type: entity
   id: BrigTimer
   parent: ScreenTimer
-  name: brig timer
-  description: It's a timer for brig cells.
+  name: бриг таймер
+  description: Это таймер для камер брига.
   components:
   - type: AccessReader
     access: [["Security"]]
