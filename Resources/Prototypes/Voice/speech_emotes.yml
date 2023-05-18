@@ -59,16 +59,16 @@
     - giggled
 
 - type: emote
-  id: Whistle
-  category: Hands
-  chatMessages: [свистнул]
+  id: Sigh
+  category: Vocal
+  chatMessages: [sighs]
   chatTriggers:
-    - свист
-    - свистит
-    - свистнул
-    - whistle
-    - whistles
-    - whistling
+    - sigh
+    - sighs
+    - sighed
+    - sigh.
+    - sighs.
+    - sighed.
 
 # hand emotes
 - type: emote
