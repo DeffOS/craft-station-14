@@ -1,5 +1,5 @@
 - type: construction
-  name: bananium horn
+  name: бананиумовый клаксон
   id: HornBananium
   graph: BananiumHorn
   startNode: start

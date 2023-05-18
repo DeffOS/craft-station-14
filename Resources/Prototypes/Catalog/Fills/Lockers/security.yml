@@ -192,11 +192,8 @@
 
 - type: entity
   parent: GunSafe
-<<<<<<< HEAD
   name: Оружейный сейф c Камерерами
-=======
   id: GunSafeShotgunKammerer
-  name: kammerer safe
   components:
   - type: StorageFill
     contents:
@@ -220,11 +217,8 @@
 
 - type: entity
   parent: GunSafe
-<<<<<<< HEAD
   name: Оружейный сейф с лазерными карабинами
-=======
   id: GunSafeLaserCarbine
-  name: laser safe
   components:
   - type: StorageFill
     contents:

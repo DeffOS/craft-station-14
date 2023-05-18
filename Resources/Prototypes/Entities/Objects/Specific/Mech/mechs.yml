@@ -112,8 +112,8 @@
 - type: entity
   id: MechHonker
   parent: BaseMech
-  name: H.O.N.K.
-  description: "Produced by \"Tyranny of Honk, INC\", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!"
+  name: Х.О.Н.К.
+  description: "Произведенный \"Тирания Клаксона, INC\", этот экзокостюм предназначен для поддержки тяжелых клоунов. Используется для распространения веселья и радости жизни. ХОНК!"
   components:
   - type: Sprite
     netsync: false

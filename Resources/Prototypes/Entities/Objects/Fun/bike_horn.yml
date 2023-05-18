@@ -109,7 +109,7 @@
 - type: entity
   parent: BikeHorn
   id: BananiumHorn
-  name: bananium horn
+  name: бананиумовый клаксон
   description: An air horn made from bananium.
   components:
   - type: Sprite

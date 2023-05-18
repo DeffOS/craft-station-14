@@ -179,7 +179,7 @@
 - type: entity
   parent: OreBase
   id: BananiumOre
-  name: bananium ore
+  name: бананиумовая руда
   suffix: Full
   components:
   - type: Stack

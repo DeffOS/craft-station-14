@@ -43,7 +43,7 @@
 
 - type: stack
   id: BananiumOre
-  name: bananium ore
+  name: бананиумовая руда
   icon: { sprite: /Textures/Objects/Materials/ore.rsi, state: bananium }
   spawn: BananiumOre1
   maxCount: 30

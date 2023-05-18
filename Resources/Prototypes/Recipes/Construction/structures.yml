@@ -521,7 +521,7 @@
   canBuildInImpassable: false
 
 - type: construction
-  name: bananium floor
+  name: бананиумовый пол
   id: FloorBananium
   graph: FloorBananium
   startNode: start
@@ -926,7 +926,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: bananium door
+  name: бананиумовая дверь
   id: BananiumDoor
   graph: DoorGraph
   startNode: start

@@ -219,7 +219,7 @@
 - type: entity
   parent: BaseHonkerPartItem
   id: HonkerLArm
-  name: H.O.N.K. left arm
+  name: Х.О.Н.К. левая рука
   description: A H.O.N.K. left arm, with unique sockets that accept odd weaponry designed by clown scientists.
   components:
   - type: Sprite
@@ -231,7 +231,7 @@
 - type: entity
   parent: BaseHonkerPartItem
   id: HonkerLLeg
-  name: H.O.N.K. left leg
+  name: Х.О.Н.К. левая нога
   description: A H.O.N.K. left leg. The foot appears just large enough to fully accommodate a clown shoe.
   components:
   - type: Sprite
@@ -243,7 +243,7 @@
 - type: entity
   parent: BaseHonkerPartItem
   id: HonkerRLeg
-  name: H.O.N.K. right leg
+  name: Х.О.Н.К. правая нога
   description: A H.O.N.K. right leg. The foot appears just large enough to fully accommodate a clown shoe.
   components:
   - type: Sprite
@@ -255,7 +255,7 @@
 - type: entity
   parent: BaseHonkerPartItem
   id: HonkerRArm
-  name: H.O.N.K. right arm
+  name: Х.О.Н.К. правая рука
   description: A H.O.N.K. right arm, with unique sockets that accept odd weaponry designed by clown scientists.
   components:
   - type: Sprite
@@ -267,7 +267,7 @@
 - type: entity
   id: HonkerChassis
   parent: BaseHonkerPart
-  name: H.O.N.K. chassis
+  name: Х.О.Н.К. шасси
   description: An in-progress construction of a H.O.N.K. mech. Contains chuckle unit, bananium core and honk support systems.
   components:
   - type: Appearance

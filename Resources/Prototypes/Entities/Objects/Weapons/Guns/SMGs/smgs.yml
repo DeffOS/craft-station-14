@@ -105,7 +105,7 @@
   name: Drozd
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunDrozd
-  description: An excellent fully automatic Heavy SMG.
+  description: Отличный полностью автоматический тяжелый SMG.
   components:
     - type: Sprite
       sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
@@ -246,7 +246,7 @@
 
 # Rubber
 - type: entity
-  name: Drozd
+  name: Дрозд
   parent: WeaponSubMachineGunDrozd
   id: WeaponSubMachineGunDrozdRubber
   suffix: Non-Lethal

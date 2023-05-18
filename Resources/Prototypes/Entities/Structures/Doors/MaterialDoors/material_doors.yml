@@ -190,7 +190,7 @@
 
 - type: entity
   id: BananiumDoor
-  name: bananium door
+  name: бананиумовая дверь
   parent: BaseMaterialDoor
   description: A door, where will it lead?
   components:

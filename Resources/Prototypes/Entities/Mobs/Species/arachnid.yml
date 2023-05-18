@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  name: Urist McWeb
+  name: Урист МакАрахнид
   parent: BaseMobOrganic
   id: BaseMobArachnid
   abstract: true
