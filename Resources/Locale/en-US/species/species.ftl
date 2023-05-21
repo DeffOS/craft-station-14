@@ -6,3 +6,4 @@ species-name-reptilian = Reptilian
 species-name-slime = Slime Person
 species-name-diona = Diona
 species-name-moth = Moth
+species-name-arachnid = Arachnid

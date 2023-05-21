@@ -13,6 +13,7 @@ job-name-doctor = врач
 job-name-cmo = главный врач
 job-name-chemist = химик
 job-name-technical-assistant = технический ассистент
+job-name-paramedic = парамедик
 job-name-engineer = инженер
 job-name-atmostech = атмосферный техник
 job-name-hop = глава персонала

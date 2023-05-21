@@ -63,7 +63,8 @@
   suffix: Full
   components:
   - type: Material
-    materials:
+  - type: PhysicalComposition
+    materialComposition:
       Plasma: 100
   - type: Stack
     stackType: Plasma
@@ -113,21 +114,24 @@
     - Sheet
     - DroneUsable
   - type: Material
-    materials:
+  - type: PhysicalComposition
+    materialComposition:
       Plastic: 100
   - type: Stack
     stackType: Plastic
+    baseLayer: base
+    layerStates:
+    - plastic
+    - plastic_2
+    - plastic_3
   - type: Sprite
     state: plastic_3
+    layers:
+    - state: plastic_3
+      map: ["base"]
   - type: Item
     heldPrefix: plastic
   - type: Appearance
-    visuals:
-    - type: StackVisualizer
-      stackLayers:
-      - plastic
-      - plastic_2
-      - plastic_3
 
 - type: entity
   parent: SheetPlastic
@@ -141,13 +145,16 @@
     count: 1
 
 - type: entity
-  parent: SheetOtherBase
+  parent: [SheetOtherBase, FoodBase]
   id: SheetUranium
   name: uranium
   suffix: Full
   components:
   - type: Material
-    materials:
+  - type: Food
+    transferAmount: 10
+  - type: PhysicalComposition
+    materialComposition:
       Uranium: 100
   - type: Stack
     stackType: Uranium
@@ -163,10 +170,10 @@
   - type: Item
     heldPrefix: uranium
   - type: Extractable
-    grindableSolutionName: uranium
+    grindableSolutionName: food
   - type: SolutionContainerManager
     solutions:
-      uranium:
+      food:
         reagents:
         - ReagentId: Uranium
           Quantity: 10
