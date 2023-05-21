@@ -207,7 +207,7 @@
 - type: entity
   id: LockerParamedic
   parent: LockerBase
-  name: paramedic's locker
+  name: шкаф парамедика
   components:
   - type: Appearance
   - type: EntityStorageVisuals

@@ -24,8 +24,8 @@
 - type: entity
   id: AnomalyLocator
   parent: [ BaseItem, PowerCellSlotSmallItem ]
-  name: anomaly locator
-  description: A device designed to aid in the locating of anomalies. Did you check the gas miners?
+  name: локатор аномалий
+  description: Устройство, предназначенное для помощи в обнаружении аномалий. Вы проверили газодобытчики?
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/anomalylocator.rsi

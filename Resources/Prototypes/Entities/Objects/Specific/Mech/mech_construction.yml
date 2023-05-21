@@ -179,8 +179,8 @@
 - type: entity
   parent: BaseHonkerPart
   id: HonkerHarness
-  name: H.O.N.K. harness
-  description: The core of the H.O.N.K. mech
+  name: H.O.N.K. жгут
+  description: Ядро Х.О.Н.Ка
   components:
   - type: Appearance
   - type: ItemMapper

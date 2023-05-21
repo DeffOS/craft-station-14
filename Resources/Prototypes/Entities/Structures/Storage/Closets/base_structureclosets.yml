@@ -184,8 +184,8 @@
 - type: entity
   id: SuitStorageBase
   parent: BaseStructureDynamic
-  name: suit storage unit
-  description: A fancy hi-tech storage unit made for storing space suits.
+  name: блок хранения костюмов
+  description: Причудливое высокотехнологичное хранилище, предназначенное для хранения космических скафандров.
   components:
   - type: StaticPrice
     price: 80

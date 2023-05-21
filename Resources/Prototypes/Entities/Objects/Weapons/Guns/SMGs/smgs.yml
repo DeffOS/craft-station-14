@@ -102,7 +102,7 @@
   - type: Appearance
 
 - type: entity
-  name: Drozd
+  name: Дрозд
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunDrozd
   description: Отличный полностью автоматический тяжелый SMG.

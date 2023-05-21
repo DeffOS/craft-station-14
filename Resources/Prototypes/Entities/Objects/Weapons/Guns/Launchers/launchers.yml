@@ -152,7 +152,7 @@
         path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
 
 - type: entity
-  name: tether gun
+  name: грави пушка
   parent:
   - BaseItem
   - PowerCellSlotMediumItem
@@ -189,7 +189,7 @@
             False: { visible: false }
 
 - type: entity
-  name: force gun
+  name: силовая пушка
   parent:
     - BaseItem
     - PowerCellSlotMediumItem
@@ -233,7 +233,7 @@
 
 # Admeme
 - type: entity
-  name: tether gun
+  name: грави пушка
   parent: BaseItem
   id: WeaponTetherGunAdmin
   suffix: admin
@@ -272,7 +272,7 @@
             False: { visible: false }
 
 - type: entity
-  name: force gun
+  name: силовая пушка
   parent: BaseItem
   id: WeaponForceGunAdmin
   suffix: Admin

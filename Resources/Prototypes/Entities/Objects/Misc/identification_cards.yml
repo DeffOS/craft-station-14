@@ -164,7 +164,7 @@
 - type: entity
   parent: IDCardStandard
   id: ParamedicIDCard
-  name: paramedic ID card
+  name: ID карта парамедика
   components:
   - type: Sprite
     layers:

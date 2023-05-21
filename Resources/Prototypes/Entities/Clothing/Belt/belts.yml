@@ -226,8 +226,8 @@
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltMedical
-  name: medical belt
-  description: Can hold various medical equipment.
+  name: медицинский пояс
+  description: Может вмещать различное медицинское оборудование.
   components:
   - type: Sprite
     sprite: Clothing/Belt/medical.rsi

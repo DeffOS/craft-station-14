@@ -1,7 +1,7 @@
 - type: entity
   id: Defibrillator
   parent: [ BaseItem, PowerCellSlotMediumItem ]
-  name: defibrillator
+  name: дефибриллятор
   description: CLEAR! Zzzzat!
   components:
   - type: Sprite

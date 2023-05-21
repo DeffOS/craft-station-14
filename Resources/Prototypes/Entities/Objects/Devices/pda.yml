@@ -478,8 +478,8 @@
 - type: entity
   parent: BasePDA
   id: ParamedicPDA
-  name: paramedic PDA
-  description: Shiny and sterile. Has a built-in rapid health analyzer.
+  name: КПК парамедика
+  description: Блестящий и стерильный. Имеет встроенный экспресс-анализатор здоровья.
   components:
   - type: PDA
     id: ParamedicIDCard

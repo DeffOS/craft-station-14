@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDeathSquad
-  name: Death squad uniform
-  description: Advanced armored jumpsuit used by special forces in special operations.
+  name: комбинезон эскадрона смерти
+  description: Усовершенствованный бронированный комбинезон, используемый спецподразделениями при проведении специальных операций.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
