@@ -65,3 +65,80 @@ ghost-role-information-jonkbot-description = Искусственное суще
 
 ghost-role-information-mimebot-name = Мимбот
 ghost-role-information-mimebot-description = Мимбот, действует как мим, но не действует как грейтидер.
+
+ghost-role-information-space-bear-name = Космический медведь
+ghost-role-information-space-bear-description = Ты медведь! Делай медвежьи дела.
+
+ghost-role-information-salvage-bear-name = Космический медведь на затонувшем корабле
+ghost-role-information-salvage-bear-description = Защищайте добычу на затонувшем корабле!
+
+ghost-role-information-space-kangaroo-name = Космический кенгуру
+ghost-role-information-space-kangaroo-description = Ты кенгуру! Делай вещи кенгуру.
+
+ghost-role-information-salvage-kangaroo-name = Космический кенгуру на затонувшем корабле
+ghost-role-information-salvage-kangaroo-description = Защищайте добычу на затонувшем корабле!
+
+ghost-role-information-space-spider-name = Космический паук
+ghost-role-information-space-spider-description = Космические пауки так же агрессивны, как и обычные пауки.
+
+ghost-role-information-salvage-spider-name = Космический паук на затонувшем корабле
+ghost-role-information-salvage-spider-description = Космические пауки так же агрессивны, как и обычные пауки, питаются.
+
+ghost-role-information-guardian-name = Хранитель
+ghost-role-information-guardian-description = Слушайте своего хозяина. Не задерживайте урон. Сильно бейте людей.
+
+ghost-role-information-holoparasite-name = Голопаразит
+ghost-role-information-holoparasite-description = Слушать хозяина. Не наносите урон. Сильно бейте людей.
+
+ghost-role-information-ifrit-name = Ифрит
+ghost-role-information-ifrit-description = Слушать хозяина. Не наносите урон. Сильно бейте людей.
+
+ghost-role-information-space-dragon-name = Космический дракон
+ghost-role-information-space-dragon-description = Вызовите 3 карповых разлома и захватите этот квадрант! У вас есть только 5 минут между каждым разломом, прежде чем вы исчезнете.
+
+ghost-role-information-cluwne-name = Клуун
+ghost-role-information-cluwne-description = Станьте жалким клоуном, ваша единственная цель в жизни - найти сладкую разрядку от страданий (обычно путем избиения до смерти). Клоун не является антагонистом, но может защищаться. Члены экипажа могут свободно убивать клоунов.
+
+ghost-role-information-skeleton-pirate-name = Пират-скелет
+ghost-role-information-skeleton-pirate-description = Наводить хаос и грабить станцию в поисках сокровищ.
+
+ghost-role-information-skeleton-biker-name = Скелет-байкер
+ghost-role-information-skeleton-biker-description = Прокатитесь на своей милой тачке.
+
+ghost-role-information-onestar-mecha-name = Onestar Mecha
+ghost-role-information-onestar-mecha-description = Вы - экспериментальный мехи, созданный неизвестно кем, все, что вы знаете, это то, что у вас есть оружие и вы обнаруживаете плотские движущиеся цели поблизости...
+ghost-role-information-onestar-mecha-rules = Используйте свое оружие для создания хаоса. Вы - антагонист.
+
+ghost-role-information-remilia-name = Ремилия, знакомая капеллана.
+ghost-role-information-remilia-description = Слушаться своего хозяина. Ешьте фрукты.
+ghost-role-information-remilia-rules = Вы - разумная фруктовая летучая мышь. Следуйте за капелланом по пятам. Не создавайте проблем, если только капеллан не скажет вам этого.
+
+ghost-role-information-cerberus-name =  Ремилия, знакомая капеллана
+ghost-role-information-remilia-description = Слушаться своего хозяина. Ешьте фрукты.
+ghost-role-information-remilia-rules = Вы - разумная фруктовая летучая мышь. Следуйте за капелланом по пятам. Не создавайте проблем, если только капеллан не скажет вам этого.
+
+ghost-role-information-cerberus-name = Цербер, Злая семья.
+ghost-role-information-cerberus-description = Слушаться своего хозяина. Распространяйте хаос.
+ghost-role-information-cerberus-rules = Вы умный, демонический пес. Постарайтесь помочь капеллану и всем его пастве. Как антагонист, в остальном вы необузданны.
+
+ghost-role-information-ert-leader-name = Лидер ОБР
+ghost-role-information-ert-leader-description = Возглавить группу специалистов для решения проблем станции.
+
+ghost-role-information-ert-janitor-name = Уборщик ОБР
+ghost-role-information-ert-janitor-description = Помогать в работе по уборке помещений для решения проблем со станциями.
+
+ghost-role-information-ert-engineer-name = Инженер ОБР
+ghost-role-information-ert-engineer-description = Помощь в инженерных работах по решению проблем станции.
+
+ghost-role-information-ert-security-name = Безопасность ОБР
+ghost-role-information-ert-security-description = Помощь в обеспечении безопасности для решения проблем станции.
+
+ghost-role-information-ert-medical-name = Медицина ОБР
+ghost-role-information-ert-medical-description = Помощь в работе медиков по решению проблем станции.
+
+ghost-role-information-cburn-agent-name = Агент РХБЗЗ
+ghost-role-information-cburn-agent-description = Высококвалифицированный агент CentCom, способный справляться с различными угрозами.
+
+ghost-role-information-centcom-official-name = Представитель ЦентКом
+ghost-role-information-centcom-official-description = Инспектировать станцию, записывать отзывы о работе руководителей персонала, доставать капитана.
+
