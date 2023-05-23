@@ -57,3 +57,11 @@ accent-words-pig-1 = Хрю.
 accent-words-pig-2 = Хрю?
 accent-words-pig-3 = Хрю!
 accent-words-pig-4 = Хрю Хрю!
+
+# Slimes
+accent-words-slimes-1 = Blyump.
+accent-words-slimes-2 = Blimpuf?
+accent-words-slimes-3 = Blump!
+accent-words-slimes-4 = Bluuump...
+accent-words-slimes-5 = Blabl blump!
+
