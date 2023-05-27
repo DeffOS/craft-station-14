@@ -1,4 +1,5 @@
 cuffable-component-cannot-interact-message = Вы не можете этого сделать!
+cuffable-component-start-uncuffing-self = Вы начинаете снимать наручники.
 cuffable-component-cannot-remove-cuffs-too-far-message = Вы слишком далеко, чтобы снять наручники.
 cuffable-component-start-removing-cuffs-message = Вы начинаете снимать наручники.
 cuffable-component-remove-cuffs-success-message = Вы успешно снимаете наручники.

@@ -1,4 +1,6 @@
 # Weapons
+uplink-rifle-ak-name = АКМС
+uplink-rifle-ak-desc = Винтовка с высоким риском и высокой отдачей. Очень заметная. (.30)
 uplink-pistol-viper-name = { ent-WeaponPistolViper }
 uplink-pistol-viper-desc = { ent-WeaponPistolViper.desc }
 uplink-revolver-python-name = { ent-WeaponRevolverPython }
@@ -73,6 +75,8 @@ uplink-freedom-implanter-name = имплантер Свобода
 uplink-freedom-implanter-desc = Сбегите от этих противных сотрудников СБ при помощи этого имплантата, который можно использовать аж три раза!
 uplink-macro-bomb-implanter-name = имплантер Макробомба
 uplink-macro-bomb-implanter-desc = Вколите его, и после смерти вы устроите большой взрыв. Большой риск для союзников, используйте на свой страх и риск. Заменяет Микробомбу.
+uplink-uplink-implanter-name = Имплантер аплинка
+uplink-uplink-implanter-desc = Незаметно заказывайте оборудование без использования КПК. Глотайте телекристаллы, чтобы пополнить их запасы.
 # Bundles
 uplink-c20r-bundle-name = { ent-ClothingBackpackDuffelSyndicateFilledSMG }
 uplink-c20r-bundle-desc = { ent-ClothingBackpackDuffelSyndicateFilledSMG.desc }
@@ -108,6 +112,10 @@ uplink-revolver-cap-gun-fake-name = Фальшивый игрушечный пи
 uplink-revolver-cap-gun-fake-desc = Одурачьте своих врагов! Использует как пистоны, так и патроны калибра .45 магнум. Последними и будет заряжен при покупке.
 uplink-banana-peel-explosive-name = Взрывная банановая кожура
 uplink-banana-peel-explosive-desc = Они взорвутся от смеха, когда поскользнутся на ней!
+uplink-hot-potato-name = горячая картошка
+uplink-hot-potato-desc = После активации эту бомбу замедленного действия нельзя сбросить - только передать кому-то другому!
+uplink-chimp-ammo-name = Коробка с 10 омега-картриджами
+uplink-chimp-ammo-desc = Коробка с 10 картриджами с омега-частицами для CHIMP. Омега-частицы наносят сильные ожоги и вызывают сверхкритические аномалии.
 # Armor
 uplink-chameleon-name = набор "Хамелеон"
 uplink-chameleon-desc = Рюкзак, полный вещей, оснащенных технологией хамелеона, позволяющих вам маскироваться под кого угодно на станции, и даже больше!
@@ -154,6 +162,8 @@ uplink-cat-ears-name = { ent-ClothingHeadHatCatEars }
 uplink-cat-ears-desc = UwU
 uplink-outlaw-hat-name = { ent-ClothingHeadHatOutlawHat }
 uplink-outlaw-hat-desc = { ent-ClothingHeadHatOutlawHat.desc }
+uplink-outlaw-glasses-name = незаконные очки
+uplink-outlaw-glasses-desc = Обязательно для каждого уважающего себя агента под прикрытием.
 uplink-costume-pyjama-name = { ent-ClothingBackpackDuffelSyndicatePyjamaBundle }
 uplink-costume-pyjama-desc = { ent-ClothingBackpackDuffelSyndicatePyjamaBundle.desc }
 uplink-costume-clown-name = вещмешок с костюмом клоуна
@@ -164,3 +174,11 @@ uplink-operative-skirt-name = { ent-ClothingUniformJumpskirtOperative }
 uplink-operative-skirt-desc = Юбка-комбинезон из отборной ткани, выдаваемая нашим ядерным оперативницам, гарантирует, что вы будете выделяться, и не имеет никаких других преимуществ, кроме крутого внешнего вида.
 uplink-balloon-name = { ent-BalloonSyn }
 uplink-balloon-desc = { ent-BalloonSyn.desc }
+
+uplink-scarf-syndie-red-name = Полосатый красный шарф синдиката
+uplink-scarf-syndie-red-desc = Стильный полосатый шарф синдиката красного цвета. Идеальный зимний аксессуар для тех, у кого обостренное чувство моды, и тех, кто не прочь что-нибудь украсть.
+
+uplink-scarf-syndie-green-name = Полосатый зеленый шарф синдиката
+uplink-scarf-syndie-green-desc = Стильный полосатый шарф синдиката зеленого цвета. Идеальный зимний аксессуар для тех, у кого обостренное чувство моды, и тех, кто не прочь что-нибудь украсть.
+
+
