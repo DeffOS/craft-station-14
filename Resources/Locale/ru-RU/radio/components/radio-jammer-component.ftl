@@ -1,6 +1,5 @@
-radio-jammer-component-on-use = Глушилка теперь { $state }.
-radio-jammer-component-on-state = работает
-radio-jammer-component-off-state = не работает
-radio-jammer-component-examine-on-state = Свет теперь [color=darkgreen]включён[/color].
-radio-jammer-component-examine-off-state = Свет теперь [color=darkred]выключен[/color].
-radio-jammer-component-charge = Заряд батареи [color=yellow]{ $charge }%[/color].
+radio-jammer-component-on-use = Глушитель связи { $state }.
+radio-jammer-component-on-state = включён
+radio-jammer-component-off-state = выключен
+radio-jammer-component-examine-on-state = Индикатор работы [color=darkgreen]горит[/color].
+radio-jammer-component-examine-off-state = Индикатор работы [color=darkred]не горит[/color].

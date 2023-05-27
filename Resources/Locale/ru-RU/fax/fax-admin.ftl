@@ -1,14 +1,12 @@
 # Command
-cmd-faxui-desc = Открыть меню для отправки факсов
-cmd-faxui-help = Usage: faxui
-
+cmd-faxui-desc = Открыть админ окно отправки факсов
+cmd-faxui-help = Использование: faxui
 # Window
-admin-fax-title = Менеджер факсами
+admin-fax-title = Менеджер админ факса
 admin-fax-fax = Факс:
-admin-fax-follow = Следить
-admin-fax-title-placeholder = Название...
+admin-fax-follow = Следовать
+admin-fax-title-placeholder = Название документа...
 admin-fax-from-placeholder = От кого...
-admin-fax-message-placeholder = Напишите сообщение...
+admin-fax-message-placeholder = Текст документа...
 admin-fax-stamp = Печать:
 admin-fax-send = Отправить
-admin-player-actions-window-admin-fax = Админский факс
