@@ -1,42 +1,47 @@
-salvage-expedition-structure-examine = Это [color=#B02E26]разрушение[/color] цели
-salvage-expedition-structure-remaining = {$count ->
-    [one] {$count} оставшаяся структура.
-    *[other] {$count} оставшиеся структуры.
-}
-
-salvage-expedition-window-title = Экспедиции
-salvage-expedition-window-difficulty = Трудность:
+salvage-expedition-structure-examine = Это необходимо [color=#B02E26]уничтожить[/color]
+salvage-expedition-structure-remaining =
+    Осталось уничтожить { $count } { $count ->
+        [one] цель.
+        [few] цели.
+       *[other] целей.
+    }
+salvage-expedition-window-title = Утилизаторские экспедиции
+salvage-expedition-window-difficulty = Сложность:
 salvage-expedition-window-details = Подробности:
 salvage-expedition-window-hostiles = Враги:
 salvage-expedition-window-duration = Продолжительность:
 salvage-expedition-window-biome = Биом:
 salvage-expedition-window-modifiers = Модификаторы:
-salvage-expedition-window-loot = Лут:
-salvage-expedition-window-none = N/A
-salvage-expedition-window-claimed = Выбрано
-salvage-expedition-window-claim = Выбрать
-
+salvage-expedition-window-loot = Добыча:
+salvage-expedition-window-none = Недоступно
+salvage-expedition-window-claimed = Принято
+salvage-expedition-window-claim = Принять
 salvage-expedition-window-next = Следующее предложение
-
-# Описания экспедиций
-salvage-expedition-desc-mining = Собирать ресурсы в зоне.
-# Вы будете облагаться налогом {$tax}% от собранных ресурсов.
-salvage-expedition-desc-structure = {$count ->
-    [one] Уничтожить {$count} {$structure} внутри области.
-    *[other] Уничтожить {$count} {$structure} внутри области.
-}
-
+# Expedition descriptions
+salvage-expedition-desc-mining = Добывайте ресурсы внутри зоны экспедиции.
+#  С вас удержат налог в размере { $tax }% от добытых ресурсов.
+salvage-expedition-desc-structure = Уничтожьте { $count } ед. { $structure } внутри зоны экспедиции.
 salvage-expedition-type-Mining = Добыча
-salvage-expedition-type-Destruction = Разрушение
-
-salvage-expedition-difficulty-Minimal = Минимальный
-salvage-expedition-difficulty-Minor = Незначительный
-salvage-expedition-difficulty-Moderate = Умеренный
-salvage-expedition-difficulty-Hazardous = Опасный
-salvage-expedition-difficulty-Extreme = Экстремальный
-
-# Бегун
-salvage-expedition-announcement-countdown-minutes = {$duration} минут, оставшихся до завершения экспедиции.
-salvage-expedition-announcement-countdown-seconds = {$duration} секунд, оставшихся до завершения экспедиции.
-salvage-expedition-announcement-dungeon = Подземелье находится в {$direction}.
-salvage-expedition-completed = Экспедиция завершена.
+salvage-expedition-type-Destruction = Уничтожение
+salvage-expedition-difficulty-Minimal = Минимальная
+salvage-expedition-difficulty-Minor = Невысокая
+salvage-expedition-difficulty-Moderate = Умеренная
+salvage-expedition-difficulty-Hazardous = Высокая
+salvage-expedition-difficulty-Extreme = Экстремальная
+# Runner
+salvage-expedition-not-all-present = Не все утилизаторы вернулись на борт шаттла!
+# Runner
+salvage-expedition-announcement-countdown-minutes =
+    До окончания экспедиции осталась { $duration } { $duration ->
+        [one] минута
+        [few] минуты
+       *[other] минут
+    }.
+salvage-expedition-announcement-countdown-seconds =
+    До окончания экспедиции осталось { $duration } { $duration ->
+        [one] секунда
+        [few] секунды
+       *[other] секунд
+    }.
+salvage-expedition-announcement-dungeon = Подземелье расположено от вас на { $direction }.
+salvage-expedition-completed = Экспедиция окончена.

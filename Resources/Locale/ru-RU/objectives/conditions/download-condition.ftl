@@ -1,2 +1,0 @@
-objective-condition-download-title = Загрузить {$count} исследовательских узлов.
-objective-condition-download-description = Используйте свои перчатки на исследовательском сервере для загрузки его данных.
