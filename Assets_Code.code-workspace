@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "Content.Server"
+		},
+		{
+			"path": "Content.Client"
+		},
+		{
+			"path": "Content.Shared"
+		}
+	],
+	"settings": {}
+}
