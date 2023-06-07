@@ -1,6 +1,6 @@
-﻿- type: lobbyBackground
-  id: Robotics
-  background: /Textures/LobbyScreens/robotics.png
+﻿#- type: lobbyBackground
+#  id: Robotics
+#  background: /Textures/LobbyScreens/robotics.png
 
 - type: lobbyBackground
   id: Supermatter
@@ -14,6 +14,26 @@
   id: Pharmacy
   background: /Textures/LobbyScreens/pharmacy.png
 
+#- type: lobbyBackground
+#  id: SSXIV
+#  background: /Textures/LobbyScreens/ssxiv.png
+
 - type: lobbyBackground
-  id: SSXIV
-  background: /Textures/LobbyScreens/ssxiv.png
+  id: Moth
+  background: /Textures/LobbyScreens/cs-moth.png
+
+- type: lobbyBackground
+  id: MechFactory
+  background: /Textures/LobbyScreens/cs-eleonore-rose-nt2sdx.png
+
+- type: lobbyBackground
+  id: Syngulatiry
+  background: /Textures/LobbyScreens/cs-singularity.png
+
+- type: lobbyBackground
+  id: BluespaceArtillery
+  background: /Textures/LobbyScreens/cs-bluespace_artillery.png
+
+- type: lobbyBackground
+  id: TypicalSec
+  background: /Textures/LobbyScreens/cs-ss13-jojo.png
