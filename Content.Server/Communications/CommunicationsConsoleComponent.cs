@@ -48,6 +48,7 @@ namespace Content.Server.Communications
         /// <summary>
         /// Announce on all grids (for nukies)
         /// </summary>
+        [ViewVariables(VVAccess.ReadWrite)]
         [DataField("global")]
         public bool AnnounceGlobal = false;
 

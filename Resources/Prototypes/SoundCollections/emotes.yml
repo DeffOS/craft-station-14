@@ -25,11 +25,6 @@
     - /Audio/Effects/Emotes/snap3.ogg
 
 - type: soundCollection
-  id: Whistles
-  files:
-    - /Audio/Effects/Emotes/whistle1.ogg
-
-- type: soundCollection
   id: DionaLaugh
   files:
     - /Audio/Voice/Diona/diona_rustle1.ogg
