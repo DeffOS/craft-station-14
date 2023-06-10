@@ -3,6 +3,7 @@ using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Explosion.Components;
+using Content.Server.GameTicking.Events;
 using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.NPC.Pathfinding;
 using Content.Shared.Camera;
@@ -311,6 +312,8 @@ public sealed partial class ExplosionSystem : EntitySystem
         var audioRange = iterationIntensity.Count * 5;
         var filter = Filter.Pvs(epicenter).AddInRange(epicenter, audioRange);
         SoundSystem.Play(type.Sound.GetSound(), filter, mapEntityCoords, _audioParams);
+
+        RaiseLocalEvent(new ExplosionCreatedEvent(epicenter,totalIntensity,slope,maxTileIntensity,tileBreakScale,maxTileBreak,canCreateVacuum));
 
         return new Explosion(this,
             type,
