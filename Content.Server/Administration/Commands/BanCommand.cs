@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using Content.Server.Database;
+using Content.Server.GameTicking.Events;
 using Content.Shared.Administration;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -110,6 +111,9 @@ namespace Content.Server.Administration.Commands
                 var message = banDef.FormatBanMessage(_cfg, LocalizationManager);
                 targetPlayer.ConnectedClient.Disconnect(message);
             }
+
+            var admin = shell.Player;
+            IoCManager.Resolve<IEntityManager>().EventBus.RaiseEvent(EventSource.Local, new PlayerBanedEvent(target, expires, reason, admin is null ? null : admin.Name));
         }
 
         public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
