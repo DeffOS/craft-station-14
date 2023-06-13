@@ -87,16 +87,21 @@ public sealed class AirlockSystem : SharedAirlockSystem
         if (_appearanceSystem.TryGetData<bool>(uid, DoorVisuals.Powered, out var powered, args.Component) && powered)
         {
             boltedVisible = _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.BoltLights, out var lights, args.Component)
-                            && lights && state == DoorState.Closed;
-            emergencyLightsVisible = _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.EmergencyLights, out var eaLights, args.Component) && eaLights;
+                            && lights
+                            && state == DoorState.Closed;
+            emergencyLightsVisible = _appearanceSystem.TryGetData<bool>(uid, DoorVisuals.EmergencyLights, out var eaLights, args.Component) && eaLights
+                            && !boltedVisible;
             unlitVisible =
                     state == DoorState.Closing
                 ||  state == DoorState.Opening
                 ||  state == DoorState.Denying
                 || (state == DoorState.Open && comp.OpenUnlitVisible)
-                || (_appearanceSystem.TryGetData<bool>(uid, DoorVisuals.ClosedLights, out var closedLights, args.Component) && closedLights);
+                //|| (_appearanceSystem.TryGetData<bool>(uid, DoorVisuals.ClosedLights, out var closedLights, args.Component) && closedLights);
+                || (state == DoorState.Closed && !emergencyLightsVisible && !boltedVisible);
         }
 
+        if (state == DoorState.Closed) // Shitfix to closing animation not cleaning up after state change. I am not suppose to change states here, probably.
+            args.Sprite.LayerSetState(DoorVisualLayers.BaseUnlit, "closed_unlit");
         args.Sprite.LayerSetVisible(DoorVisualLayers.BaseUnlit, unlitVisible);
         args.Sprite.LayerSetVisible(DoorVisualLayers.BaseBolted, boltedVisible);
         if (comp.EmergencyAccessLayer)
