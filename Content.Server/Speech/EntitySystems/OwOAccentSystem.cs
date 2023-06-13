@@ -14,6 +14,7 @@ namespace Content.Server.Speech.EntitySystems
         private static readonly IReadOnlyDictionary<string, string> SpecialWords = new Dictionary<string, string>()
         {
             { "you", "wu" },
+            { "ты", "тви" },
         };
 
         public override void Initialize()
@@ -30,7 +31,15 @@ namespace Content.Server.Speech.EntitySystems
 
             return message.Replace("!", _random.Pick(Faces))
                 .Replace("r", "w").Replace("R", "W")
-                .Replace("l", "w").Replace("L", "W");
+                .Replace("l", "w").Replace("L", "W")
+
+                .Replace("р", "в").Replace("Р", "В")
+                .Replace("л", "в").Replace("Л", "В")
+                // (Су)харь -> (Ву)харь
+                .Replace("су", "ву").Replace("Су", "Ву")
+                // Дела(ть) -> Дева(фь)
+                .Replace("ть", "фь").Replace("Ть", "Фь")
+                ;
         }
 
         private void OnAccent(EntityUid uid, OwOAccentComponent component, AccentGetEvent args)

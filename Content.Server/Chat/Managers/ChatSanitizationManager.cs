@@ -68,7 +68,24 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "kek.", "chatsan-laughs" },
         { "o7", "chatsan-salutes" },
         { ";_;7", "chatsan-tearfully-salutes"},
-        { "idk", "chatsan-shrugs" }
+        { "idk", "chatsan-shrugs" },
+        // Cyrilic counterparts
+        { ":О", "chatsan-surprised" },
+        { "о-о", "chatsan-wide-eyed" },
+        { "о.о", "chatsan-wide-eyed" },
+        { "о/", "chatsan-waves" },
+        { "лал", "chatsan-laughs" },
+        { "лал.", "chatsan-laughs" },
+        { "лол", "chatsan-laughs" },
+        { "лол.", "chatsan-laughs" },
+        { "лел", "chatsan-laughs" },
+        { "лел.", "chatsan-laughs" },
+        { "лул", "chatsan-laughs" },
+        { "лул.", "chatsan-laughs" },
+        { "кек", "chatsan-laughs" },
+        { "кек.", "chatsan-laughs" },
+        { "о7", "chatsan-salutes" },
+        { "хз", "chatsan-shrugs" },
     };
 
     private bool _doSanitize;
