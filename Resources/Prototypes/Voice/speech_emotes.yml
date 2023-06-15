@@ -2,7 +2,7 @@
 - type: emote
   id: Scream
   category: Vocal
-  chatMessages: [screams!]
+  chatMessages: [кричит!]
   chatTriggers:
     - scream
     - screams
@@ -28,11 +28,17 @@
     - yells!
     - yelled
     - yelling
+    - крик
+    - крик.
+    - крик!
+    - кричит
+    - кричит.
+    - кричит!
 
 - type: emote
   id: Laugh
   category: Vocal
-  chatMessages: [laughs]
+  chatMessages: [смеётся]
   chatTriggers:
     - laugh
     - laughs
@@ -52,11 +58,17 @@
     - giggles!
     - giggling
     - giggled
+    - смех
+    - смех.
+    - смех!
+    - смеётся
+    - смеётся.
+    - смеётся!
 
 - type: emote
   id: Sigh
   category: Vocal
-  chatMessages: [sighs]
+  chatMessages: [вздыхает]
   chatTriggers:
     - sigh
     - sighs
@@ -64,12 +76,16 @@
     - sigh.
     - sighs.
     - sighed.
+    - вздох
+    - вздох.
+    - вздыхает
+    - вздыхает.
 
 # hand emotes
 - type: emote
   id: Clap
   category: Hands
-  chatMessages: [claps!]
+  chatMessages: [хлопает!]
   chatTriggers:
     - clap
     - claps
@@ -77,11 +93,17 @@
     - claps!
     - clapping
     - clapped
+    - хлоп
+    - хлоп.
+    - хлоп!
+    - хлопает
+    - хлопает.
+    - хлопает!
 
 - type: emote
   id: Snap
   category: Hands
-  chatMessages: [snaps fingers] # snaps <{THEIR($ent)}> fingers?
+  chatMessages: [щёлкает пальцами] # snaps <{THEIR($ent)}> fingers?
   chatTriggers:
     - snap
     - snaps
@@ -96,4 +118,12 @@
     - snaps their fingers!
     - snapping fingers
     - snapped fingers
-
+    - щелк
+    - щелк.
+    - щелк!
+    - щелкает
+    - щелкает.
+    - щелкает!
+    - щелкает пальцами
+    - щелкает пальцами.
+    - щелкает пальцами!
