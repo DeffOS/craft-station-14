@@ -1,0 +1,127 @@
+- type: faction
+  id: Zerg
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - Xeno
+  - Dragon
+
+- type: accent
+  id: zerg
+  words:
+    - accent-words-xeno-1
+    - accent-words-xeno-2
+    - accent-words-xeno-3
+    - accent-words-xeno-4
+
+- type: entity
+  id: MobZerg
+  parent: SimpleSpaceMobBase
+  name: Зерг
+  description: Гремущая длань Роя.
+  abstract: true
+  components:
+  #- type: GhostRole
+  #  allowMovement: true
+  #  allowSpeech: false
+  #  makeSentient: false
+  #  name: zerg-ghostrole-name
+  #  description: zerg-ghostrole-desc
+  #  rules: zerg-ghostrole-rules
+  - type: Insulated
+    protection: 1
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask: XenoCompound
+    blackboard:
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Tool
+    speed: 0.8
+    qualities:
+      - Prying
+    useSound:
+      path: /Audio/_CraftStation/Zergs/zerg_pry.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Faction
+    factions:
+    - Zerg
+  - type: Hands
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/ling.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    thresholds:
+      0: Alive
+      150: Critical
+      200: Dead
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: epicene
+  - type: Stamina
+    excess: 200
+  - type: Bloodstream
+    bloodMaxVolume: 200
+  - type: MeleeWeapon
+    hidden: true
+    angle: 0
+    soundHit:
+      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 10
+  - type: Appearance
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: stand
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 6
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0.0005
