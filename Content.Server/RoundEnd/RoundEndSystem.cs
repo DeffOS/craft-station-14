@@ -151,6 +151,7 @@ namespace Content.Server.RoundEnd
                     false,
                     null,
                     Color.Gold);
+				SoundSystem.Play("/Audio/Corvax/Announcements/crew_s_called.ogg", Filter.Broadcast(), AudioParams.Default.AddVolume(-4));
             }
             else
             {
@@ -161,9 +162,9 @@ namespace Content.Server.RoundEnd
                     false,
                     null,
                     Color.Gold);
+            	SoundSystem.Play("/Audio/Announcements/shuttlecalled.ogg", Filter.Broadcast(), AudioParams.Default.AddVolume(-4));
             }
 
-            SoundSystem.Play("/Audio/Announcements/shuttlecalled.ogg", Filter.Broadcast());
 
             LastCountdownStart = _gameTiming.CurTime;
             ExpectedCountdownEnd = _gameTiming.CurTime + countdownTime;
