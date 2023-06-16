@@ -1,3 +1,9 @@
 ﻿defaultWindowTitle: Space Station 14 - Засранец Космический
 windowIconSet: /Textures/Logo/icon
+
 splashLogo: /Textures/Logo/logo-sa.png
+
+clientAssemblies:
+  - Content.Client
+  - Content.Shared
+  - Content.Shared.Database

@@ -81,6 +81,51 @@
     - вздыхает
     - вздыхает.
 
+- type: emote
+  id: Whistle
+  category: Vocal
+  chatMessages: [whistle]
+  chatTriggers:
+    - whistle
+    - whistle.
+    - whistle!
+    - whistles
+    - whistles.
+    - whistles!
+    - whistleblowing
+    - whistleblowing.
+    - whistleblowing!
+
+- type: emote
+  id: Crying
+  category: Vocal
+  chatMessages: [crying]
+  chatTriggers:
+    - cry
+    - cry.
+    - cry!
+    - crying
+    - crying.
+    - crying!
+    - cries
+    - cries.
+    - cries!
+
+- type: emote
+  id: Squish
+  category: Vocal
+  chatMessages: [squishing]
+  chatTriggers:
+    - squish
+    - squish.
+    - squish!
+    - squishing
+    - squishing.
+    - squishing!
+    - squishes
+    - squishes.
+    - squishes!
+
 # hand emotes
 - type: emote
   id: Clap
@@ -127,3 +172,24 @@
     - щелкает пальцами
     - щелкает пальцами.
     - щелкает пальцами!
+
+- type: emote
+  id: Salute
+  category: Hands
+  chatMessages: [салютирует]
+  chatTriggers:
+    - salute
+    - salute.
+    - salute!
+    - salutes
+    - salutes.
+    - salutes!
+    - салют
+    - салют.
+    - салют!
+    - салютирует
+    - салютирует.
+    - салютирует!
+    - отдаёт честь
+    - отдаёт честь.
+    - отдаёт честь!
