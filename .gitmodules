@@ -4,4 +4,4 @@
 	branch = master
 [submodule "Resources/Locale/ru-RU/Corvax"]
 	path = Resources/Locale/ru-RU/Corvax
-	url = https://github.com/starcraft-gazers/ss14-rulang.git
+	url = https://github.com/starcraft-gazers/ss14-rulocale.git
