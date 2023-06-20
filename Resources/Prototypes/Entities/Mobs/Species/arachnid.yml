@@ -47,6 +47,7 @@
       65: 0.7
       80: 0.4
   # Misc
+  - type: Spider # We do be doing little bit of mischief
   - type: Speech
     speechSounds: Arachnid
   - type: Vocal
