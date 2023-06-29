@@ -143,7 +143,10 @@
             "name": "SecurityCadet"
         },
         {
-            "name": "IAA"
+			"name": "IAA"
+        },
+		{
+            "name": "Zombie"
         },
         {
             "name": "Zookeeper"
