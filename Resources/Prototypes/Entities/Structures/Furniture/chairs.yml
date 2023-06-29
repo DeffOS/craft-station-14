@@ -203,7 +203,7 @@
   - type: Sprite
     state: ritual
   - type: Construction
-    graph: RitualSeat
+    graph: Seat
     node: chairRitual
 
 - type: entity
