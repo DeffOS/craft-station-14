@@ -1,0 +1,90 @@
+- type: tile
+  id: FloorSCTilePlating
+  name: tiles-sc-plating
+  sprite: /Textures/_CraftStation/Tiles/scTilePlating.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  edgeSprites:
+    SouthEast: /Textures/_CraftStation/Tiles/scTilePlatingCorner.png
+    NorthEast: /Textures/_CraftStation/Tiles/scTilePlatingCorner.png
+    NorthWest: /Textures/_CraftStation/Tiles/scTilePlatingCorner.png
+    SouthWest: /Textures/_CraftStation/Tiles/scTilePlatingCorner.png
+    South: /Textures/_CraftStation/Tiles/scTilePlatingEdge.png
+    East: /Textures/_CraftStation/Tiles/scTilePlatingEdge.png
+    North: /Textures/_CraftStation/Tiles/scTilePlatingEdge.png
+    West: /Textures/_CraftStation/Tiles/scTilePlatingEdge.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSCDarkTile
+  name: tiles-sc-dark
+  sprite: /Textures/_CraftStation/Tiles/scDarkTile.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSCDarkTileMono
+  name: tiles-sc-dark-mono
+  sprite: /Textures/_CraftStation/Tiles/scDarkTileMono.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSCSubfloorGrill
+  name: tiles-sc-subfloor-grill
+  sprite: /Textures/_CraftStation/Tiles/scSubfloorGrill.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSCSubfloorMono
+  name: tiles-sc-subfloor-mono
+  sprite: /Textures/_CraftStation/Tiles/scSubfloorMono.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSCSubfloorPlating
+  name: tiles-sc-subfloor-plating
+  sprite: /Textures/_CraftStation/Tiles/scSubfloorPlating.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
