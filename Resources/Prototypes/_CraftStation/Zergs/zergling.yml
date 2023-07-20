@@ -25,9 +25,9 @@
     Blunt: 0.6
     Slash: 0.4
     Piercing: 0.4
+    Heat: 0.8
   flatReductions:
-    Blunt: 5
-    Heat: 5
+    Blunt: 2
 
 - type: entity
   id: MobZergling
@@ -37,7 +37,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _CraftStation/Mobs/Aliens/Zergs/ling.rsi
+    sprite: _CraftStation/Mobs/Aliens/Zergs/ling/ling.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: stand
@@ -60,7 +60,6 @@
     disarmAction:
       enabled: false
       autoPopulate: false
-      name: action-name-disarm
   - type: MeleeWeapon
     hidden: true
     angle: 15
@@ -80,8 +79,8 @@
     - id: FoodMeatXeno
       amount: 6
   - type: MovementSpeedModifier
-    baseWalkSpeed : 3.0
-    baseSprintSpeed : 4.0
+    baseWalkSpeed : 4.0
+    baseSprintSpeed : 6.0
   - type: Fixtures
     fixtures:
       fix1:
@@ -97,7 +96,7 @@
     price: 1250
 
 - type: entity
-  id: MobZerglingGhostTakeover
+  id: MobZerglingGT
   parent: MobZergling
   suffix: Роль
   components:
@@ -178,7 +177,6 @@
     - id: Food
     - id: Drink
 
-# But why tho? Even I cant tell
 - type: body
   id: Zergian
   name: "zerg"
@@ -252,7 +250,7 @@
       collection: ZerlingPet
   - type: Sprite
     drawdepth: Mobs
-    sprite: _CraftStation/Mobs/Aliens/Zergs/lingpet.rsi
+    sprite: _CraftStation/Mobs/Aliens/Zergs/ling/lingpet.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: stand
@@ -267,23 +265,20 @@
     damage:
       types:
         Slash: 4
-  - type: Grammar
-    attributes:
-      proper: true
-      gender: male
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2
-    baseSprintSpeed : 3
+    baseWalkSpeed : 3
+    baseSprintSpeed : 80
   - type: Faction
     factions:
-    - NanoTrasen
+    - ZergNT
   - type: LizardAccent
   - type: ReplacementAccent
     accent: xeno
-  - type: Strippable
   - type: Body
     prototype: Zergian
     requiredLegs: 1
+
+  - type: Strippable
   - type: Hands
   - type: UserInterface
     interfaces:

@@ -1,0 +1,106 @@
+- type: soundCollection
+  id: LarveScreams
+  files:
+    - /Audio/_CraftStation/Zergs/ling_scream1.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream2.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream3.ogg
+
+- type: emoteSounds
+  id: Larve
+  params:
+    variation: 0.1
+  sounds:
+    Scream:
+      collection: HydraliskScreams
+
+- type: damageModifierSet
+  id: Larve
+  coefficients:
+    Blunt: 0.9
+    Slash: 0.9
+    Piercing: 0.75
+    Heat: 0.6
+  flatReductions:
+    Piercing: 2
+
+- type: entity
+  parent: MobMouse
+  id: MobMouseSuperb
+  components:
+  - type: Faction
+    factions:
+    - Zerg
+  - type: HTN
+    rootTask: XenoCompound
+    blackboard:
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+
+
+- type: entity
+  id: MobZergLarva
+  parent: MobZerg
+  name: Личинка
+  description: Крепкое существо способное мутировать во множество видов зергов. Достаточно маленькое для подьёма.
+  #abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/larve/larve.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stand
+  - type: MobState
+    thresholds:
+      0: Alive
+      90: Critical
+      100: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 80
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Larve
+  - type: CombatMode
+    combatToggleAction:
+      enabled: false
+      autoPopulate: false
+  - type: Vocal
+    sounds:
+      Male: Larve
+      Female: Larve
+      Unsexed: Larve
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1
+    baseSprintSpeed : 2
+  - type: Item
+    size: 50
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 0.15
+        density: 60
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: StaticPrice
+    price: 750
+
+- type: polymorph
+  id: Larva
+  entity: MobZergLarva
+  forced: true
+  inventory: Drop
+  revertOnCrit: false
+  revertOnDeath: false

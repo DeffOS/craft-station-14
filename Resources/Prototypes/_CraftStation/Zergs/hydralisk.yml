@@ -1,0 +1,117 @@
+- type: soundCollection
+  id: HydraliskScreams
+  files:
+    - /Audio/_CraftStation/Zergs/ling_scream1.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream2.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream3.ogg
+
+- type: emoteSounds
+  id: Hydralisk
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: HydraliskScreams
+    Laugh:
+      path: /Audio/_CraftStation/Zergs/ling_laugh.ogg
+    Snore:
+      path: /Audio/_CraftStation/Zergs/ling_snore.ogg
+    Sigh:
+      path: /Audio/_CraftStation/Zergs/ling_sigh.ogg
+
+- type: damageModifierSet
+  id: Hydralisk
+  coefficients:
+    Blunt: 0.2
+    Slash: 0.2
+    Piercing: 0.6
+  flatReductions:
+    Blunt: 2
+
+- type: entity
+  id: MobZergHydralisk
+  parent: MobZerg
+  name: Гидралиск
+  description: Дальнобойный вид зергов прославившийся своими садисткими наклонностями, крайне опасен в ближнем бою.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/hydra/hydra.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stand
+  - type: MobState
+    thresholds:
+      0: Alive
+      220: Critical
+      250: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 200
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Hydralisk
+  - type: Vocal
+    sounds:
+      Male: Hydralisk
+      Female: Hydralisk
+      Unsexed: Hydralisk
+  - type: CombatMode
+    disarmAction:
+      enabled: false
+      autoPopulate: false
+  - type: MeleeWeapon
+    hidden: true
+    angle: 15
+    range: 2
+    attackRate: 0.5
+    soundHit:
+      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 20
+        Piercing: 20
+        Structural: 10
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 10
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 3.0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 0.4
+        density: 400
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  id: MobZergHydraliskGT
+  parent: MobZergHydralisk
+  suffix: Роль
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: false
+    makeSentient: false
+    name: Гидралиск
+    description: zerg-ghostrole-desc
+    rules: Вы антогонист! Обьединитесь с другими зергами и приведите станцию к краху, за Рой! #zerg-ghostrole-rules
+
+- type: polymorph
+  id: Hydralisk
+  entity: MobZergHydralisk
+  forced: true
+  inventory: Drop
+  revertOnCrit: false
+  revertOnDeath: false

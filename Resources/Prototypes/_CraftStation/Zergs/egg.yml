@@ -1,0 +1,35 @@
+- type: entity
+  id: MobZergEgg
+  parent: MobZerg
+  name: Яйцо
+  description: Яйцо зергов.
+  #abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/egg/egg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: idle
+  - type: MobState
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 120
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Larve
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 0.2
+        density: 150
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 1500

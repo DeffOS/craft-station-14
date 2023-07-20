@@ -1,0 +1,163 @@
+- type: soundCollection
+  id: UltraliskScreams
+  files:
+    - /Audio/_CraftStation/Zergs/ling_scream1.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream2.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream3.ogg
+
+- type: emoteSounds
+  id: Ultralisk
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: UltraliskScreams
+    Laugh:
+      path: /Audio/_CraftStation/Zergs/ling_laugh.ogg
+    Snore:
+      path: /Audio/_CraftStation/Zergs/ling_snore.ogg
+    Sigh:
+      path: /Audio/_CraftStation/Zergs/ling_sigh.ogg
+
+- type: damageModifierSet
+  id: Ultralisk
+  coefficients:
+    Blunt: 0.8
+    Slash: 0.8
+    Piercing: 0.6
+  flatReductions:
+    Blunt: 8
+    Slash: 8
+    Piercing: 4
+
+- type: entity
+  id: MobZergUltralisk
+  parent: MobZerg
+  name: Ультралиск
+  description: Брух.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/ultralisk/ultralisk.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stand
+  - type: MobState
+    thresholds:
+      0: Alive
+      800: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 600
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Ultralisk
+  - type: Vocal
+    sounds:
+      Male: Ultralisk
+      Female: Ultralisk
+      Unsexed: Ultralisk
+  - type: CombatMode
+    disarmAction:
+      enabled: false
+      autoPopulate: false
+  - type: MeleeWeapon
+    hidden: true
+    angle: 30
+    range: 2
+    attackRate: 1.2
+    soundHit:
+      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 40
+        Blunt: 60
+        Structural: 30
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 10
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 3.0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 1.49
+        density: 3500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 20000
+
+- type: entity
+  id: MobZergUltraliskGT
+  parent: MobZergUltralisk
+  suffix: Роль
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: false
+    makeSentient: false
+    name: Ультралиск
+    description: zerg-ghostrole-desc
+    rules: Вы антогонист! Обьединитесь с другими зергами и приведите станцию к краху, за Рой! #zerg-ghostrole-rules
+
+- type: polymorph
+  id: Ultralisk
+  entity: MobZergUltralisk
+  forced: true
+  inventory: Drop
+  revertOnCrit: false
+  revertOnDeath: false
+
+- type: entity
+  id: MobZergPygalisk
+  parent: MobZergUltralisk
+  name: Пигалиск
+  description: Брух.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/ultralisk/pygalisk.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stand
+  - type: MobState
+    thresholds:
+      0: Alive
+      300: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 250
+  - type: MeleeWeapon
+    hidden: true
+    angle: 30
+    range: 1
+    attackRate: 1.2
+    soundHit:
+      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 15
+        Blunt: 10
+        Structural: 8
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 0.8
+        density: 1500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 4000

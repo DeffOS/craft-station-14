@@ -1,0 +1,117 @@
+- type: soundCollection
+  id: QueenScreams
+  files:
+    - /Audio/_CraftStation/Zergs/ling_scream1.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream2.ogg
+    - /Audio/_CraftStation/Zergs/ling_scream3.ogg
+
+- type: emoteSounds
+  id: Queen
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: QueenScreams
+    Laugh:
+      path: /Audio/_CraftStation/Zergs/ling_laugh.ogg
+    Snore:
+      path: /Audio/_CraftStation/Zergs/ling_snore.ogg
+    Sigh:
+      path: /Audio/_CraftStation/Zergs/ling_sigh.ogg
+
+- type: damageModifierSet
+  id: Queen
+  coefficients:
+    Blunt: 0.5
+    Slash: 0.5
+    Piercing: 0.6
+  flatReductions:
+    Blunt: 4
+
+- type: entity
+  id: MobZergQueen
+  parent: MobZerg
+  name: Королева
+  description: Брух.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _CraftStation/Mobs/Aliens/Zergs/queen/queen.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stand
+  - type: MobState
+    thresholds:
+      0: Alive
+      400: Critical
+      500: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 200
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Queen
+  - type: Vocal
+    sounds:
+      Male: Queen
+      Female: Queen
+      Unsexed: Queen
+  - type: CombatMode
+    disarmAction:
+      enabled: false
+      autoPopulate: false
+  - type: MeleeWeapon
+    hidden: true
+    angle: 15
+    range: 2
+    attackRate: 0.5
+    soundHit:
+      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 20
+        Piercing: 20
+        Structural: 10
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 10
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 3.0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+         !type:PhysShapeCircle
+          radius: 0.49
+        density: 1500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  id: MobZergQueenGT
+  parent: MobZergQueen
+  suffix: Роль
+  components:
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: false
+    makeSentient: false
+    name: Королева
+    description: zerg-ghostrole-desc
+    rules: Вы антогонист! Обьединитесь с другими зергами и приведите станцию к краху, за Рой! #zerg-ghostrole-rules
+
+- type: polymorph
+  id: Queen
+  entity: MobZergQueen
+  forced: true
+  inventory: Drop
+  revertOnCrit: false
+  revertOnDeath: false

@@ -5,6 +5,16 @@
   - Syndicate
   - Xeno
   - Dragon
+  - ZergNT
+
+- type: faction
+  id: ZergNT
+  hostile:
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Dragon
+  - Zerg
 
 - type: accent
   id: zerg
@@ -16,22 +26,121 @@
 
 - type: entity
   id: MobZerg
-  parent: SimpleSpaceMobBase
+  #parent: SimpleSpaceMobBase
   name: Зерг
+  suffix: ""
   description: Гремущая длань Роя.
   abstract: true
   components:
-  #- type: GhostRole
-  #  allowMovement: true
-  #  allowSpeech: false
-  #  makeSentient: false
-  #  name: zerg-ghostrole-name
-  #  description: zerg-ghostrole-desc
-  #  rules: zerg-ghostrole-rules
-  - type: Insulated
-    protection: 1
+  - type: SolutionContainerManager
+  - type: InteractionOutline
+  - type: RadiationReceiver
+  - type: LagCompensation
+  - type: MovedByPressure
+  - type: HeatResistance
+  - type: StandingState
+  - type: Polymorphable
+  - type: AtmosExposed
+  - type: StatusIcon
+  - type: Appearance
   - type: InputMover
+  - type: Perishable
+  - type: Flashable
+  - type: Internals
+  - type: Clickable
   - type: MobMover
+  - type: Climbing
+  - type: Examiner
+  - type: Pullable
+  - type: Actions
+  - type: DoAfter
+  - type: Alerts
+  - type: Buckle
+
+  - type: Input
+    context: "human"
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 4
+  - type: HealthExaminable
+    examinableTypes:
+    - Blunt
+    - Slash
+    - Piercing
+    - Heat
+    - Shock
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      path: /Audio/Effects/hit_kick.ogg
+  - type: Physics
+    bodyType: KinematicController
+  - type: Bloodstream
+    bloodMaxVolume: 200
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          1
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: Damageable
+    damageContainer: Biological
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 1
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310
+    coldDamage:
+      types:
+        Cold : 0.1
+    specificHeat: 42
+    heatDamage:
+      types:
+        Heat : 0.1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+  - type: StatusEffects
+    allowed:
+    - SlowedDown
+    - Stutter
+    - Electrocution
+    - ForcedSleep
+    - TemporaryBlindness
+    - Pacified
+  - type: Body
+    prototype: Animal
+  - type: InjectableSolution
+    solution: chemicals
+  - type: RotationVisuals
+    defaultRotation: 0
+    horizontalRotation: 0
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: MobPrice
+    price: 1500 # Living critters are valuable in space.
+
   - type: HTN
     rootTask: XenoCompound
     blackboard:
@@ -39,8 +148,13 @@
         true
       NavPry: !type:Bool
         true
-      NavSmash: !type:Bool
-        true
+      #NavSmash: !type:Bool
+      #  true
+  - type: Faction
+    factions:
+    - Zerg
+  #- type: Insulated
+  #  protection: 1
   - type: Tool
     speed: 0.8
     qualities:
@@ -56,13 +170,12 @@
     - Zerg
   - type: Hands
   - type: Sprite
+    #noRot: true
     drawdepth: Mobs
     sprite: _CraftStation/Mobs/Aliens/Zergs/ling.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
-  - type: Physics
-    bodyType: Dynamic
   - type: Fixtures
     fixtures:
       fix1:
@@ -75,6 +188,7 @@
         layer:
         - MobLayer
   - type: MobState
+  - type: MobThresholds
     thresholds:
       0: Alive
       150: Critical
@@ -85,18 +199,6 @@
       gender: epicene
   - type: Stamina
     excess: 200
-  - type: Bloodstream
-    bloodMaxVolume: 200
-  - type: MeleeWeapon
-    hidden: true
-    angle: 0
-    soundHit:
-      path: /Audio/_CraftStation/Zergs/ling_attack.ogg
-    animation: WeaponArcBite
-    damage:
-      groups:
-        Brute: 10
-  - type: Appearance
   - type: DamageStateVisuals
     rotate: true
     states:
@@ -114,10 +216,6 @@
       amount: 6
   - type: TypingIndicator
     proto: alien
-  - type: Temperature
-    heatDamageThreshold: 360
-    coldDamageThreshold: -150
-    currentTemperature: 310
   - type: Tag
     tags:
       - CannotSuicide
