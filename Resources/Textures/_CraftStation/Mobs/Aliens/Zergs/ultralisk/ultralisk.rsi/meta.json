@@ -1,0 +1,43 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+	"copyright": "Starcraft Remastered - LemonSky Studio, Blizzard | Port - DeffOS@GitHub/defaultos@Discord",
+	"size": {
+		"x": 128,
+		"y": 128
+	},
+	"states": [
+		{
+			"name": "spawn",
+			"delays": [
+				[
+					0.20,
+					0.15,
+					0.15,
+					0.15,
+					0.15,
+					0.15,
+					0.15
+				]
+			]
+		},
+		{
+			"name": "stand",
+			"directions": 8
+		},
+		{
+			"name": "gib",
+			"delays": [
+				[
+					0.20,
+					0.15,
+					0.15,
+					0.1,
+					0.1,
+					0.1,
+					0.1
+				]
+			]
+		}
+	]
+}
