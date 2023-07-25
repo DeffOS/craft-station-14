@@ -1,9 +1,9 @@
 - type: soundCollection
   id: HydraliskScreams
   files:
-    - /Audio/_CraftStation/Zergs/ling_scream1.ogg
-    - /Audio/_CraftStation/Zergs/ling_scream2.ogg
-    - /Audio/_CraftStation/Zergs/ling_scream3.ogg
+    - /Audio/_CraftStation/Zergs/hydra_screem1.ogg
+    - /Audio/_CraftStation/Zergs/hydra_screem2.ogg
+    - /Audio/_CraftStation/Zergs/hydra_screem3.ogg
 
 - type: emoteSounds
   id: Hydralisk
@@ -12,12 +12,8 @@
   sounds:
     Scream:
       collection: HydraliskScreams
-    Laugh:
-      path: /Audio/_CraftStation/Zergs/ling_laugh.ogg
-    Snore:
-      path: /Audio/_CraftStation/Zergs/ling_snore.ogg
     Sigh:
-      path: /Audio/_CraftStation/Zergs/ling_sigh.ogg
+      path: /Audio/_CraftStation/Zergs/hydra_sigh.ogg
 
 - type: damageModifierSet
   id: Hydralisk
@@ -27,6 +23,40 @@
     Piercing: 0.6
   flatReductions:
     Blunt: 2
+
+- type: entity
+  id: ZergHydraliskSpineBullet
+  name: спинной шип гидралика
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+
+- type: entity
+  id: ZergHydraliskSpine
+  name: спинной шип гидралика
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeCaselessRifle
+  - type: CartridgeAmmo
+    proto: ZergHydraliskSpineBullet
+    deleteOnSpawn: true
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   id: MobZergHydralisk
@@ -72,6 +102,15 @@
         Slash: 20
         Piercing: 20
         Structural: 10
+  - type: Gun
+    fireRate: 1.8
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot: /Audio/_CraftStation/Zergs/hydra_shoot.ogg
+  - type: BallisticAmmoProvider
+    proto: ZergHydraliskSpine
+    capacity: 999
   - type: Butcherable
     butcheringType: Spike
     spawned:

@@ -24,24 +24,6 @@
     Piercing: 2
 
 - type: entity
-  parent: MobMouse
-  id: MobMouseSuperb
-  components:
-  - type: Faction
-    factions:
-    - Zerg
-  - type: HTN
-    rootTask: XenoCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-
-
-- type: entity
   id: MobZergLarva
   parent: MobZerg
   name: Личинка
@@ -49,6 +31,7 @@
   #abstract: true
   components:
   - type: Sprite
+    noRot: false
     drawdepth: Mobs
     sprite: _CraftStation/Mobs/Aliens/Zergs/larve/larve.rsi
     layers:
