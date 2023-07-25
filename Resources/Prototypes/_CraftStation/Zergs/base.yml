@@ -44,7 +44,6 @@
   - type: StatusIcon
   - type: Appearance
   - type: InputMover
-  - type: Perishable
   - type: Flashable
   - type: Internals
   - type: Clickable
@@ -165,12 +164,9 @@
     groups:
       Flammable: [Touch]
       Extinguish: [Touch]
-  - type: Faction
-    factions:
-    - Zerg
   - type: Hands
   - type: Sprite
-    #noRot: true
+    noRot: true
     drawdepth: Mobs
     sprite: _CraftStation/Mobs/Aliens/Zergs/ling.rsi
     layers:
