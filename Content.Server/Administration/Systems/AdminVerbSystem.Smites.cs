@@ -331,7 +331,7 @@ public sealed partial class AdminVerbSystem
 
             Verb handRemoval = new()
             {
-                Text = "Remove hands",
+                Text = "Remove hand",
                 Category = VerbCategory.Smite,
                 Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/AdminActions/remove-hand.png")),
                 Act = () =>
