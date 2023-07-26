@@ -268,7 +268,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 80
-  - type: Faction
+  - type: NpcFactionMember
     factions:
     - ZergNT
   - type: LizardAccent

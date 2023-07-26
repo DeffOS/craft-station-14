@@ -1,4 +1,4 @@
-- type: faction
+- type: npcFaction
   id: Zerg
   hostile:
   - NanoTrasen
@@ -7,7 +7,7 @@
   - Dragon
   - ZergNT
 
-- type: faction
+- type: npcFaction
   id: ZergNT
   hostile:
   - SimpleHostile
@@ -149,7 +149,7 @@
         true
       #NavSmash: !type:Bool
       #  true
-  - type: Faction
+  - type: NpcFactionMember
     factions:
     - Zerg
   #- type: Insulated
