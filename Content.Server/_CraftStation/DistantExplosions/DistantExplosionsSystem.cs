@@ -6,6 +6,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
+using System.Numerics;
 
 namespace Content.Server.Craft.DistantExplosions
 {
@@ -38,7 +39,7 @@ namespace Content.Server.Craft.DistantExplosions
             float mass = 0;
 
             float radius = _expSys.IntensityToRadius(ev.TotalIntensity, ev.Slope, ev.MaxTileIntensity);
-            var box = Box2.CenteredAround(mapCoords.Position, (radius, radius));
+            var box = Box2.CenteredAround(mapCoords.Position, new Vector2(radius, radius));
 
             foreach (var grid in _mapMan.FindGridsIntersecting(mapCoords.MapId, box))
             {
