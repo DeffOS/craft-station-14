@@ -141,19 +141,20 @@
     price: 1500 # Living critters are valuable in space.
 
   - type: HTN
-    rootTask: XenoCompound
+    rootTask:
+      task: XenoCompound
     blackboard:
+      NavClimb: !type:Bool
+        true
       NavInteract: !type:Bool
         true
       NavPry: !type:Bool
         true
-      #NavSmash: !type:Bool
-      #  true
+      NavSmash: !type:Bool
+        true
   - type: NpcFactionMember
     factions:
     - Zerg
-  #- type: Insulated
-  #  protection: 1
   - type: Tool
     speed: 0.8
     qualities:
