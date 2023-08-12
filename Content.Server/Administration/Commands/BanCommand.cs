@@ -96,7 +96,15 @@ public sealed class BanCommand : LocalizedCommands
         var targetUid = located.UserId;
         var targetHWid = located.LastHWId;
 
+        DateTimeOffset? expires = null;
+        if (minutes > 0)
+        {
+            expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes);
+        }
+
+        var admin = shell.Player;
         _bans.CreateServerBan(targetUid, target, player?.UserId, null, targetHWid, minutes, severity, reason);
+        IoCManager.Resolve<IEntityManager>().EventBus.RaiseEvent(EventSource.Local, new PlayerBanedEvent(target, expires, reason, admin is null ? null : admin.Name));
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
