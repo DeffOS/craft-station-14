@@ -140,7 +140,7 @@
    - chittered
    - chittered.
    - chittered!
-  
+
 - type: emote
   id: Squeak
   category: Vocal
@@ -223,3 +223,8 @@
     - отдаёт честь
     - отдаёт честь.
     - отдаёт честь!
+- type: emote
+  id: DefaultDeathgasp
+  chatMessages: ["emote-deathgasp"]
+  chatTriggers:
+  - deathgasp
