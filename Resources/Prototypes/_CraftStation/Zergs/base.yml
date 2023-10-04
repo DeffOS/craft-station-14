@@ -37,7 +37,7 @@
   - type: RadiationReceiver
   - type: LagCompensation
   - type: MovedByPressure
-  - type: HeatResistance
+  - type: GloveHeatResistance
   - type: StandingState
   - type: Polymorphable
   - type: AtmosExposed
